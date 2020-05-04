@@ -18,15 +18,11 @@ class MainScreen extends StatelessWidget {
     TextEditingController _controller2 = new TextEditingController();
     List history_list = [
       InputGiven(input1: null, input2: null, operator_sign: null, answer: null)
-    ]; //final _helperFunctions = Provider.of<HelperFunctions>(context);
-    //final answerProvider = Provider.of<Answer>(context);
+    ];
 
     updateInput1(input) {
       print(input);
       input1_str = input;
-      // setState(() {
-      //   // this.input1_str = input;
-      // });
     }
 
     updateInput2(input) {
@@ -172,14 +168,6 @@ class MainScreen extends StatelessWidget {
             Container(
               margin: EdgeInsets.fromLTRB(0, 8, 0, 0),
               child: Text('currentAnswer'),
-              // child: Consumer<Answer>(
-              //     builder: (_, answer, __) => Text(
-              //         answer.answer), //Text(${_answerProvider.getAnswer()}, )
-              // child: Text(
-              //   _helperFunctions.answer_str,
-              //   style: TextStyle(fontSize: 25),
-              //   overflow: TextOverflow.fade,
-              // ),
             ),
           ],
         )
